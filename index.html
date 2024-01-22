@@ -19,61 +19,64 @@
       here.appendChild(ul);
 
       const li1 = document.createElement("li");
-      li1.innerText = `Array.from: ${Array.from !== undefined}`;
+      li1.innerText = "Array.from: ";
+      li1.innerText += Array.from !== undefined;
       ul.appendChild(li1);
 
       const li2 = document.createElement("li");
-      li2.innerText = `element.classList: ${
-        document.createElement("div").classList !== undefined
-      }`;
+      li2.innerText = "element.classList: ";
+      li2.innerText += document.createElement("div").classList !== undefined;
       ul.appendChild(li2);
 
       const li3 = document.createElement("li");
-      li3.innerText = `element.closest: ${
-        document.createElement("div").closest !== undefined
-      }`;
+      li3.innerText = "element.closest: ";
+      li3.innerText += document.createElement("div").closest !== undefined;
       ul.appendChild(li3);
 
       const li4 = document.createElement("li");
-      li4.innerText = `CustomEvent: ${CustomEvent !== undefined}`;
+      li4.innerText = "CustomEvent: ";
+      li4.innerText += CustomEvent !== undefined;
+
       ul.appendChild(li4);
 
       const li5 = document.createElement("li");
-      li5.innerText = `fetch: ${fetch !== undefined}`;
+      li5.innerText = "fetch: ";
+      li5.innerText += fetch !== undefined;
       ul.appendChild(li5);
 
       const li6 = document.createElement("li");
-      li6.innerText = `FormData: ${FormData !== undefined}`;
+      li6.innerText = "FormData: ";
+      li6.innerText += FormData !== undefined;
       ul.appendChild(li6);
 
       const li7 = document.createElement("li");
-      li7.innerText = `MutationObserver: ${MutationObserver !== undefined}`;
+      li7.innerText = "MutationObserver: ";
+      li7.innerText += MutationObserver !== undefined;
       ul.appendChild(li7);
 
       const li8 = document.createElement("li");
-      li8.innerText = `NodeList.foreach: ${
-        document.createElement("div").childNodes.forEach !== undefined
-      }`;
+      li8.innerText = "NodeList.foreach: ";
+      li8.innerText += document.childNodes.forEach !== undefined;
       ul.appendChild(li8);
 
       const li9 = document.createElement("li");
-      li9.innerText = `document.remove: ${document.remove !== undefined}`;
+      li9.innerText = "document.remove: ";
+      li9.innerText += document.remove !== undefined;
       ul.appendChild(li9);
 
       const li10 = document.createElement("li");
-      li10.innerText = `element.remove: ${
-        document.createElement("div").remove !== undefined
-      }`;
+      li10.innerText = "element.remove: ";
+      li10.innerText += document.createElement("div").remove !== undefined;
       ul.appendChild(li10);
 
       const li11 = document.createElement("li");
-      li11.innerText = `replaceWith: ${
-        document.createElement("div").replaceWith !== undefined
-      }`;
+      li11.innerText = "replaceWith: ";
+      li11.innerText += document.createElement("div").replaceWith !== undefined;
       ul.appendChild(li11);
 
       const li12 = document.createElement("li");
-      li12.innerText = `window.url URL: ${URL !== undefined}`;
+      li12.innerText = "window.url URL: ";
+      li12.innerText += URL !== undefined;
       ul.appendChild(li12);
 
       console.log("Array.from ", Array.from !== undefined, Array.from);
