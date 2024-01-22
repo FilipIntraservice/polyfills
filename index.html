@@ -6,7 +6,38 @@
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
+    <div id="here"></div>
     <script>
+      const here = document.getElementById("here");
+
+      here.innerHTML = `
+        <h1>Feature Detection</h1>
+        <ul>
+            <li>Array.from: ${Array.from !== undefined}</li>
+            <li>element.classList: ${
+              document.createElement("div").classList !== undefined
+            }</li>
+            <li>element.closest: ${
+              document.createElement("div").closest !== undefined
+            }</li>
+            <li>CustomEvent: ${CustomEvent !== undefined}</li>
+            <li>fetch: ${fetch !== undefined}</li>
+            <li>FormData: ${FormData !== undefined}</li>
+            <li>MutationObserver: ${MutationObserver !== undefined}</li>
+            <li>NodeList.foreach: ${
+              document.createElement("div").childNodes.forEach !== undefined
+            }</li>
+            <li>document.remove: ${document.remove !== undefined}</li>
+            <li>element.remove: ${
+              document.createElement("div").remove !== undefined
+            }</li>
+            <li>replaceWith: ${
+              document.createElement("div").replaceWith !== undefined
+            }</li>
+            <li>window.url URL: ${URL !== undefined}</li>
+        </ul>
+        `;
+
       console.log("Array.from ", Array.from !== undefined, Array.from);
 
       const div = document.createElement("div");
