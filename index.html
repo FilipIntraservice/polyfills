@@ -10,33 +10,71 @@
     <script>
       const here = document.getElementById("here");
 
-      here.innerHTML = `
-        <h1>Feature Detection</h1>
-        <ul>
-            <li>Array.from: ${Array.from !== undefined}</li>
-            <li>element.classList: ${
-              document.createElement("div").classList !== undefined
-            }</li>
-            <li>element.closest: ${
-              document.createElement("div").closest !== undefined
-            }</li>
-            <li>CustomEvent: ${CustomEvent !== undefined}</li>
-            <li>fetch: ${fetch !== undefined}</li>
-            <li>FormData: ${FormData !== undefined}</li>
-            <li>MutationObserver: ${MutationObserver !== undefined}</li>
-            <li>NodeList.foreach: ${
-              document.createElement("div").childNodes.forEach !== undefined
-            }</li>
-            <li>document.remove: ${document.remove !== undefined}</li>
-            <li>element.remove: ${
-              document.createElement("div").remove !== undefined
-            }</li>
-            <li>replaceWith: ${
-              document.createElement("div").replaceWith !== undefined
-            }</li>
-            <li>window.url URL: ${URL !== undefined}</li>
-        </ul>
-        `;
+      // create the same thing but without the template literal
+      const h1 = document.createElement("h1");
+      h1.innerText = "Feature Detection";
+      here.appendChild(h1);
+
+      const ul = document.createElement("ul");
+      here.appendChild(ul);
+
+      const li1 = document.createElement("li");
+      li1.innerText = `Array.from: ${Array.from !== undefined}`;
+      ul.appendChild(li1);
+
+      const li2 = document.createElement("li");
+      li2.innerText = `element.classList: ${
+        document.createElement("div").classList !== undefined
+      }`;
+      ul.appendChild(li2);
+
+      const li3 = document.createElement("li");
+      li3.innerText = `element.closest: ${
+        document.createElement("div").closest !== undefined
+      }`;
+      ul.appendChild(li3);
+
+      const li4 = document.createElement("li");
+      li4.innerText = `CustomEvent: ${CustomEvent !== undefined}`;
+      ul.appendChild(li4);
+
+      const li5 = document.createElement("li");
+      li5.innerText = `fetch: ${fetch !== undefined}`;
+      ul.appendChild(li5);
+
+      const li6 = document.createElement("li");
+      li6.innerText = `FormData: ${FormData !== undefined}`;
+      ul.appendChild(li6);
+
+      const li7 = document.createElement("li");
+      li7.innerText = `MutationObserver: ${MutationObserver !== undefined}`;
+      ul.appendChild(li7);
+
+      const li8 = document.createElement("li");
+      li8.innerText = `NodeList.foreach: ${
+        document.createElement("div").childNodes.forEach !== undefined
+      }`;
+      ul.appendChild(li8);
+
+      const li9 = document.createElement("li");
+      li9.innerText = `document.remove: ${document.remove !== undefined}`;
+      ul.appendChild(li9);
+
+      const li10 = document.createElement("li");
+      li10.innerText = `element.remove: ${
+        document.createElement("div").remove !== undefined
+      }`;
+      ul.appendChild(li10);
+
+      const li11 = document.createElement("li");
+      li11.innerText = `replaceWith: ${
+        document.createElement("div").replaceWith !== undefined
+      }`;
+      ul.appendChild(li11);
+
+      const li12 = document.createElement("li");
+      li12.innerText = `window.url URL: ${URL !== undefined}`;
+      ul.appendChild(li12);
 
       console.log("Array.from ", Array.from !== undefined, Array.from);
 
